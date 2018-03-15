@@ -3,7 +3,9 @@
 new Vue({
     el: "#vue-app",
     data: {
-        age: 30
+        age: 30,
+        x:0,
+        y:0
     },
     methods: {
         add: function(inc) {
@@ -11,6 +13,10 @@ new Vue({
         },
         subtract: function(dec) {
             this.age -= dec;
+        },
+        updateXY: function(event){
+            this.x = event.offsetX;
+            this.y = event.offsetY;
         }
     }
 });
