@@ -21,6 +21,9 @@ new Vue({
         stopMoving: function(event){
             // event.stopPropagation();
             
+        },
+        alert: function(){
+            alert("hello world!")
         }
     }
 });
