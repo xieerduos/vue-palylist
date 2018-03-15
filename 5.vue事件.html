@@ -21,7 +21,7 @@
         <p>My age is {{age}} </p>
 
         <div id="canvas" v-on:mousemove="updateXY">
-            {{ x }} --{{ y }}
+            {{ x }} --{{ y }} <span v-on:mousemove.stop="">Stop Moving</span>
         </div>
     </div>
 

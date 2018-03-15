@@ -17,6 +17,10 @@ new Vue({
         updateXY: function(event){
             this.x = event.offsetX;
             this.y = event.offsetY;
+        },
+        stopMoving: function(event){
+            // event.stopPropagation();
+            
         }
     }
 });
